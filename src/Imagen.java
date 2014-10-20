@@ -18,5 +18,4 @@ public class Imagen {
 	public void setImage(byte[] image) {
 		this.image = image;
 	}
-
 }
