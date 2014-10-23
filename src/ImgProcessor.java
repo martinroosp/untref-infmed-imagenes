@@ -1,5 +1,6 @@
 import ij.ImagePlus;
 import ij.io.Opener;
+import ij.plugin.filter.FFTFilter;
 import ij.plugin.filter.PlugInFilter;
 import ij.process.ImageProcessor;
 
@@ -13,8 +14,8 @@ public class ImgProcessor implements PlugInFilter {
 		ImageProcessor imageDuplicated = ip.duplicate();
 		getHistogram(imageDuplicated);
 		imageDuplicated.findEdges();
-		// FFT filtro = new FFT();
-		// filtro.run("resources/radiografia_mano.jpg");
+//		FFTFilter filtro = new FFTFilter();
+//		filtro.run(imageDuplicated);
 		String Title = "Edges";
 		ImagePlus imgPlus = new ImagePlus(Title, imageDuplicated);
 		imgPlus.show();
