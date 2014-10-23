@@ -4,18 +4,22 @@ public class Imagen {
 	private byte[] image;
 
 	public String getName() {
-		return name;
+
+		return this.name;
 	}
 
 	public void setName(String name) {
+
 		this.name = name;
 	}
 
 	public byte[] getImage() {
-		return image;
+
+		return this.image;
 	}
 
 	public void setImage(byte[] image) {
+
 		this.image = image;
 	}
 }
